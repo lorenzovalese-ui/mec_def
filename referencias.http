@@ -1,0 +1,64 @@
+### HOME
+GET http://localhost:3000/
+
+### LISTAR CLIENTES
+GET http://localhost:3000/clientes
+
+### CADASTRAR CLIENTE
+POST http://localhost:3000/clientes
+Content-Type: application/json
+
+{
+    "nome": "Lorenzo",
+    "senha": "123456",
+    "id_mecanico": 1
+}
+
+### LOGIN
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "nome": "Lorenzo",
+    "senha": "123456"
+}
+
+### LISTAR MECANICOS
+GET http://localhost:3000/mecanicos
+
+### CADASTRAR MECANICO
+POST http://localhost:3000/mecanicos
+Content-Type: application/json
+
+{
+    "nome": "Carlos",
+    "contato": "48999999999"
+}
+
+### LISTAR CARROS
+GET http://localhost:3000/carros
+
+### CADASTRAR CARRO
+POST http://localhost:3000/carros
+Content-Type: application/json
+
+{
+    "marca": "Volkswagen",
+    "problema": "Motor falhando",
+    "id_cliente": 1
+}
+
+### LISTAR SERVICOS
+GET http://localhost:3000/servicos
+
+### CADASTRAR SERVICO
+POST http://localhost:3000/servicos
+Content-Type: application/json
+
+{
+    "descricao": "Troca de óleo",
+    "data_servico": "2026-06-23",
+    "valor": 150.00,
+    "status": "Concluído",
+    "id_carro": 1
+}

@@ -1,0 +1,19 @@
+{
+  "name": "mec_def2",
+  "version": "1.0.0",
+  "main": "servers.js",
+  "scripts": {
+    "start": "node servers.js",
+    "dev": "node servers.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "fastify": "^5.8.5",
+    "postgres": "^3.4.9"
+  }
+}
